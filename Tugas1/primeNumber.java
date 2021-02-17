@@ -3,22 +3,26 @@ import java.util.Scanner;
 public class primeNumber {
 
 	public static void main(String[] args) {    
-	    int nth = 20210;
-	    int count = 0;
-	    int num=1;
-	    int i;
-	 
-	    while (count < nth){
-	    	num=num+1;
-	    	for (i = 2; i <= num; i++) { 
-	    		if (num % i == 0) {
+	    int input, count = 0, num = 2, result = 0, i;
+	    
+	    System.out.print("Input : ");
+	    Scanner sc = new Scanner(System.in);
+	    input = sc.nextInt();
+	    
+	    while(count < input) {
+	    	int check=0;
+	    	for(i = 2; i <= Math.sqrt(num); i++) {
+	    		if(num % i == 0) {
+	    			check = 1;
 	    			break;
 	    		}
 	    	}
-	    	if ( i == num) {
-	    		count = count+1;
+	    	if(check == 0) {
+	    		count++;
+	    		result = num;
 	    	}
+	    	num = num + 1;
 	    }
-	    System.out.println("Bilangan prima ke-20210 : "+num);
-	  }
+	    System.out.println("Bilangan prima ke-" + input + " : " + result);
+	}
 }
