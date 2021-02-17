@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    font-family:"Times New Roman";
+}
+h1{
+  color:white; 
+  font-family:"Times New Roman";
+}
+p{
+  color:white;
+  font-family:"Times New Roman";
+    font-style:Italic;
+  font-size:20px;
+}
+.center{
+    margin:0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.quotes{
+  background-color:black;
+  width:auto;
+  margin-left:auto;
+  margin-right:auto;
+  border-color:white;
+  border-style:solid;
+  border-radius:5px;
+  margin-top:20px;
+  padding:15px;
+  height:auto;
+  color:white;
+}
+.quote{
+  font-size:30px;
+}
+.author{
+  font-size:20px;
+  font-style:italic;
+}
